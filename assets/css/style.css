@@ -48,6 +48,17 @@ img, video {
     margin: 4px 0;
 }
 
+#gitHub {
+    width: 95%;
+    padding: 10px;
+    margin: 50px 15px;
+    background-color: rgb(255, 179, 0);
+    border: 3px solid black;
+    border-radius: 15px; 
+    text-align: center;
+    
+}
+
 @media (min-width: 1024px){
     nav {
         flex-direction: row;
