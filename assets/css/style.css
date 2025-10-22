@@ -45,7 +45,7 @@ p {
 img, video {
     width: 100%;
     height: auto;
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
 @media (min-width: 1024px){
