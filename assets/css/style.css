@@ -37,6 +37,17 @@ a {
     color: #000000;
 }
 
+p {
+    padding: 10px;
+    font-size: 14px;
+}
+
+img, video {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+}
+
 @media (min-width: 1024px){
     nav {
         flex-direction: row;
@@ -102,10 +113,7 @@ p {
     line-height: 1.2;
 }
 
-img, video {
-    width: 100%;
-    height: auto;
-}
+
 
 #profilePic {
     width: 50%;
