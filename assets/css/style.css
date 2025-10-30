@@ -44,7 +44,7 @@ a {
     line-height: 150%;
 }
 
-#intro a {
+#intro a, #contact-info a {
     border: 1px solid black;
     padding: 2px;
     border-radius: 3px;
@@ -80,9 +80,7 @@ img, video {
 }
 
 footer {
-    position: fixed;
     font-size: 12px;
-    bottom: 0;
 }
 
 @media (min-width: 1024px){
