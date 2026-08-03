@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BILLY BACCAM</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?v=20260803-11">
+    <script src="./assets/js/navigation.js?v=20260803-2" defer></script>
+    <script src="./assets/js/video-controls.js?v=20260803-1" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="site-navigation" aria-label="Primary navigation">
             <a href="index.html">BILLY BACCAM</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
             <a href="web.html">WEB</a>
             <a href="3D.html">3D</a>
-            <a href="immersive.html">IMMERSIVE</a>
+            <a href="immersive.html" aria-current="page">IMMERSIVE</a>
             <a href="info.html">INFO</a>
         </nav>
     </header>
 
-    <div id="immersive-info">
-        I was co-founder and creative director of a creative studio called Input Output from 2017-2024 that researched, designed, and developed interactive and immersive art installations for public art commissions and various clients across brands, museums, festivals, restaurants, and non-profits.
-        <br>
-        <br>
-        <video autoplay muted playsinline loop controls preload="metadata">
-            <source src="assets/videos/immersive/2021_IO_Reel.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> 
-        <img src="assets/images/immersive/Condenser.png" alt="Condenser, Seismique Museum"> 
-        <video autoplay muted playsinline loop controls preload="metadata">
-            <source src="assets/videos//immersive/IO_Seismique.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> 
-        <img src="assets/images/immersive/DataStream.jpg" alt="Data Stream, Bush International Airport"> 
-        <br>
-        <br>
-    </div>
+    <main class="page-shell">
+    <section id="immersive-info">
+        <p class="page-lede">I was co-founder and creative director of a creative studio called Input Output from 2017-2026 that researched, designed, and developed interactive and immersive art installations for public art commissions and various clients across brands, museums, festivals, restaurants, and non-profits.</p>
+        <div class="media-grid">
+            <video playsinline controls preload="none" poster="assets/images/posters/io-reel.jpg">
+                <source src="assets/videos/immersive/2021_IO_Reel-720p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="assets/images/immersive/Condenser-optimized.jpg" width="1800" height="1180" loading="lazy" decoding="async" alt="Condenser, Seismique Museum">
+            <video playsinline controls preload="none" poster="assets/images/posters/io-seismique.jpg">
+                <source src="assets/videos/immersive/IO_Seismique-720p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="assets/images/immersive/DataStream-optimized.jpg" width="1920" height="1440" loading="lazy" decoding="async" alt="Data Stream, Bush International Airport">
+        </div>
+    </section>
+    </main>
     <div id="copyright">
         <footer>
-            <p>&copy; 2025 BILLY BACCAM. ALL RIGHTS RESERVED.</p>
+            <p>&copy; 2026 BILLY BACCAM. ALL RIGHTS RESERVED.</p>
         </footer>
     </div>
 </body>

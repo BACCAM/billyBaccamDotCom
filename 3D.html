@@ -4,65 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BILLY BACCAM</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?v=20260803-11">
+    <script src="./assets/js/navigation.js?v=20260803-2" defer></script>
+    <script src="./assets/js/video-controls.js?v=20260803-1" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="site-navigation" aria-label="Primary navigation">
             <a href="index.html">BILLY BACCAM</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
             <a href="web.html">WEB</a>
-            <a href="3D.html">3D</a>
+            <a href="3D.html" aria-current="page">3D</a>
             <a href="immersive.html">IMMERSIVE</a>
             <a href="info.html">INFO</a>
         </nav>
     </header>
 
-    <div id="threed-info">
-        Exploring the beautiful craft of CGI and motion design:
-        <br>
-        <br>
-        + Conception
-        <br>
-        + Art Direction
-        <br>
-        + Modeling
-        <br>
-        + Texturing
-        <br>
-        + Lighting
-        <br>
-        + Rigging
-        <br>
-        + Animation
-        <br>
-        + Simulation
-        <br>
-        + Cinematography
-        <br>
-        + Rendering
-        <br>
-        + Compositing
-        <br>
-        + Technical Direction
-        <br>
-        <br>
-        <video autoplay muted playsinline loop controls preload="metadata">
-            <source src="assets/videos/3D/PolygonpenModelingexercise1Bottle.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> 
-        <video autoplay muted playsinline loop controls preload="metadata">
-            <source src="assets/videos/3D/Lightstudy_handbrake.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> 
-        <video autoplay muted playsinline loop controls preload="metadata">
-            <source src="assets/videos/3D/KnobModelingexercise0001.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> 
-    </div>
+    <main class="page-shell">
+    <section id="threed-info">
+        <p class="page-lede">Exploring the beautiful craft of CGI and motion design:</p>
+        <ul class="capability-list">
+            <li>Conception</li>
+            <li>Art Direction</li>
+            <li>Modeling</li>
+            <li>Texturing</li>
+            <li>Lighting</li>
+            <li>Rigging</li>
+            <li>Animation</li>
+            <li>Simulation</li>
+            <li>Cinematography</li>
+            <li>Rendering</li>
+            <li>Compositing</li>
+            <li>Technical Direction</li>
+        </ul>
+        <div class="media-grid media-grid--square">
+            <video playsinline controls preload="none" poster="assets/images/posters/polygon-bottle.jpg">
+                <source src="assets/videos/3D/PolygonpenModelingexercise1Bottle-720p.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video playsinline controls preload="none" poster="assets/images/posters/light-study.jpg">
+                <source src="assets/videos/3D/Lightstudy_handbrake.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video playsinline controls preload="none" poster="assets/images/posters/knob-modeling.jpg">
+                <source src="assets/videos/3D/KnobModelingexercise0001.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    </main>
     <div id="copyright">
         <footer>
-            <p>&copy; 2025 BILLY BACCAM. ALL RIGHTS RESERVED.</p>
+            <p>&copy; 2026 BILLY BACCAM. ALL RIGHTS RESERVED.</p>
         </footer>
     </div>
 </body>

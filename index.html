@@ -6,13 +6,17 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <title>BILLY BACCAM</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?v=20260803-11">
+    <script src="./assets/js/navigation.js?v=20260803-2" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html">BILLY BACCAM</a>
+        <nav id="site-navigation" aria-label="Primary navigation">
+            <a href="index.html" aria-current="page">BILLY BACCAM</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
             <a href="web.html">WEB</a>
             <a href="3D.html">3D</a>
             <a href="immersive.html">IMMERSIVE</a>
@@ -20,36 +24,29 @@
         </nav>
     </header>
 
+    <main>
     <div id="intro">
         <b>Hello, World!</b>
-        <br>
-        + I'm <a href="info.html">Billy</a>, an aspiring polymath who loves to learn and create.
-        <br>
-        + I'm currently building things for the <a href="web.html">web</a>.
-        <br>
-        + I make <a href="3D.html">3D art</a>.
-        <br>
-        + I ran a creative studio that made <a href="immersive.html">immersive</a> experiences.
-        <br>
-        <br>
-        <b>Tools I build with:</b>
-        <br>
-        + HTML / CSS / JS / Git / GitHub
-        <br>
-        + Cinema 4D / Redshift / After Effects
-        <br>
-        + TouchDesigner
-        <br>
-        + C/C++
-        <br>
-        + Ableton
-        <br>
-        + Processing
-       
+        <ul class="plus-list">
+            <li>I'm <a href="info.html">Billy</a>, an aspiring polymath who loves to learn and create.</li>
+            <li>I'm currently building things for the <a href="web.html">web</a>.</li>
+            <li>I make <a href="3D.html">3D art</a>.</li>
+            <li>I ran a creative studio that made <a href="immersive.html">immersive</a> experiences.</li>
+        </ul>
+        <b class="tools-heading">Tools I build with:</b>
+        <ul class="plus-list">
+            <li>HTML / CSS / JS / Git / GitHub</li>
+            <li>Cinema 4D / Redshift / After Effects</li>
+            <li>TouchDesigner</li>
+            <li>C/C++</li>
+            <li>Ableton</li>
+            <li>Processing</li>
+        </ul>
     </div>
+    </main>
     <div id="copyright">
         <footer>
-            <p>&copy; 2025 BILLY BACCAM. ALL RIGHTS RESERVED.</p>
+            <p>&copy; 2026 BILLY BACCAM. ALL RIGHTS RESERVED.</p>
         </footer>
     </div>
 </body>

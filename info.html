@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BILLY BACCAM</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css?v=20260803-11">
+    <script src="./assets/js/navigation.js?v=20260803-2" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav id="site-navigation" aria-label="Primary navigation">
             <a href="index.html">BILLY BACCAM</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
             <a href="web.html">WEB</a>
             <a href="3D.html">3D</a>
             <a href="immersive.html">IMMERSIVE</a>
-            <a href="info.html">INFO</a>
+            <a href="info.html" aria-current="page">INFO</a>
         </nav>
     </header>
 
-    <div id="profilePic">
-        <img  src="assets/images/info/Billy.JPEG" alt="Billy!"> 
+    <main class="page-shell">
+    <div class="info-grid">
+        <div id="profilePic">
+            <img src="assets/images/info/Billy.JPEG" width="768" height="1024" decoding="async" alt="Billy!">
+        </div>
+        <div id="contact-info">
+            Email: <a href="mailto:billy.baccam@gmail.com">billy.baccam@gmail.com</a>
+            <br>
+            Twitter: <a href="https://x.com/BILLYBACCAM">@BILLYBACCAM</a>
+            <br>
+            Instagram: <a href="http://instagram.com/waveofthefuture">@waveofthefuture</a>
+        </div>
     </div>
-    <div id="contact-info">
-        Email: <a href="mailto:billy.baccam@gmail.com">billy.baccam@gmail.com</a>
-        <br>
-        Twitter: <a href="https://x.com/BILLYBACCAM">@BILLYBACCAM</a>
-        <br>
-        Instagram: <a href="http://instagram.com/waveofthefuture">@waveofthefuture</a>
-    </div>
+    </main>
     <div id="copyright">
         <footer>
-            <p>&copy; 2025 BILLY BACCAM. ALL RIGHTS RESERVED.</p>
+            <p>&copy; 2026 BILLY BACCAM. ALL RIGHTS RESERVED.</p>
         </footer>
     </div>
 </body>
